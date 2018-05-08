@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style2 {
+	color: #0000FF;
+	font-weight: bold;
+}
+-->
+</style>
+<!--  
+<link rel="stylesheet" type="text/css" href="css/somegeneral.css">
+-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>$(document).ready(function(){
+	
+	$('#form1').validate({ // initialize the plugin
+        rules: {
+        	T4: {
+                required: true,
+                minlength: 5
+               // email: true
+            },
+            T1: {
+                required: true,
+                minlength: 2
+            },
+            T2: {
+                required: true,
+                minlength: 5
+            },
+            T3: {
+                required: true,
+                minlength: 5
+            },
+            T5: {
+                required: true,
+                minlength: 5
+            }
+        },
+        submitHandler: function (form) { // for demo
+            alert('valid form submitted'); // for demo
+            return true; // for demo
+        }
+    });
+
+	
+	
+	
+	
+	
+	
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+<body>
+<div align="center" style="width: 497; height: 310">
+  <p align="left"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+  <p align="left"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <u><font size="4"><span style="background-color: #C0C0C0">Register Hospitals Details</span></font></u></strong></p>
+  <form id="form1" name="form1" method="post" action="Queryregster.jsp">
+    <div align="left">
+    <table width="50%" border="0" bgcolor="#00FF00">
+      <tr>
+        <td width="157" height="23" ><span class="style2">
+        </span><strong><font color="#111111">Hospital </font></strong><span class="style2"><font color="#111111">Name</font></span></td>
+        <td width="173" height="23"><label>
+          <select size="1" name="D1" class="form-control">
+            <option>St Johns</option>
+            <option>St Marry</option>
+            <option>St philominas</option>
+            <option>ochard</option>
+            <option>Narayana Hrudalaya</option>
+            <option>CMH</option>
+          </select>
+        </label></td>
+      </tr>
+      <tr>
+        <td height="23" ><strong>Consultant Name </font></strong></td>
+        <td height="23"><input type="text" class="form-control" name="T4" size="20"></td>
+      </tr>
+      <tr>
+        <td height="23"><b>Working Hours </b></font></td>
+        <td height="23"><label>
+          <input type="text" class="form-control" name="T1" size="20" />
+        </label></td>
+      </tr>
+      <tr>
+        <td height="36" ><b>Holidays</b></font></td>
+        <td height="36"><input type="text" class="form-control" name="T2" size="20"></td>
+      </tr>
+      <tr>
+        <td height="47" ><strong>Address</font></strong></td>
+        <td height="47"><textarea class="form-control" rows="3" name="T3" cols="20"></textarea></td>
+      </tr>
+      <tr>
+        <td height="22" ><b>City</b></font></td>
+        <td height="22"><input type="text" class="form-control" name="T5" size="20"></td>
+      </tr>
+      <tr>
+        <td height="1"></td>
+        <td height="1"></td>
+      </tr>
+      <tr>
+        <td height="1"></td>
+        <td height="1"><label>
+          <input type="submit" name="Submit" value="Submit" class="btn"/><input type="reset" name="Submit2" value="Reset" class="btn" /></label></td>
+      </tr>
+    </table>
+    </div>
+  </form>
+  <p>&nbsp;  </p>
+</div>
+</body>
+
+</html>
